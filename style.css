@@ -398,6 +398,7 @@ body.light-mode .dropdown-content a:hover {
   max-width: 90%;
   max-height: 90%;
   border-radius: 12px;
+  align-self: flex-start;
 }
 
 .lightbox:target {

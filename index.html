@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -199,8 +199,8 @@
     document.body.classList.toggle('light-mode');
     modeToggle.textContent = document.body.classList.contains('light-mode') ? '🌞' : '🌙';
   });
+  document.querySelectorAll("div").forEach((e)=>e.onclick = ()=> {if(window.location.hash) window.location.hash = ''});
 </script>
 <body class="light-mode">
 </body>
 </html>
-
